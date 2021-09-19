@@ -1,9 +1,11 @@
 import React from 'react';
+import Sidebar from "../../components/Sidebar";
 
 const Calendar = () => {
   return (
     <div>
-      Календарь
+      <Sidebar />
+        Календарь
     </div>
   );
 };

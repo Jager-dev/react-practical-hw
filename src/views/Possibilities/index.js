@@ -1,9 +1,11 @@
 import React from 'react';
+import Sidebar from "../../components/Sidebar";
 
 const Possibilities = () => {
   return (
     <div>
-        Возможности
+      <Sidebar />
+      Возможности
     </div>
   );
 };
