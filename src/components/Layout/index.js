@@ -1,7 +1,4 @@
 import React from 'react';
-import {NavLink} from "react-router-dom";
-import logo from "./logo.jpg"
-import avatar from "./avatar.jpg"
 import Header from "../Header";
 import Aside from "../Aside";
 

@@ -1,4 +1,3 @@
-import React, {useState} from 'react';
 import Modal from "react-modal";
 import {Button, Col, Form, Row} from "react-bootstrap";
 import {useForm} from "react-hook-form";

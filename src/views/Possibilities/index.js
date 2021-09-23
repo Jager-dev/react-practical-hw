@@ -4,7 +4,6 @@ const Possibilities = () => {
   return (
     <div>
       Возможности
-
     </div>
 )
   ;
