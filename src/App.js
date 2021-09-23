@@ -1,18 +1,22 @@
-import {BrowserRouter as Router, Route} from 'react-router-dom'
-import HomePage from "./views/HomePage";
+import {BrowserRouter as Router, Route, Redirect} from 'react-router-dom'
+import Projects from "./views/Projects";
 import Works from "./views/Works";
 import Calendar from "./views/Calendar";
 import Possibilities from "./views/Possibilities";
+import Layout from "./components/Layout";
 
 
 
 function App() {
   return (
     <Router>
-      <Route exact path='/'><HomePage /></Route>
+      <Layout>
+      <Route exact path='/'><Redirect to="/projects"/></Route>
+      <Route exact path='/projects'><Projects /></Route>
       <Route exact path='/works'><Works /></Route>
       <Route exact path='/calendar'><Calendar /></Route>
       <Route exact path='/possibilities'><Possibilities /></Route>
+      </Layout>
     </Router>
   );
 }
